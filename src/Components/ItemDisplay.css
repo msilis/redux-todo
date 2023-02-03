@@ -10,9 +10,19 @@
     box-shadow: 8px 8px 8px black;
 }
 
-.list-item {
+.false {
     font-size: 1.25rem;
     margin-left: 1rem;
+    border: 2px solid black;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+}
+
+.true {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+    text-decoration: line-through;
     border: 2px solid black;
     padding: .5rem;
     border-radius: 10px;
