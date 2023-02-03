@@ -28,3 +28,8 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+#add-item {
+    margin-top: .5rem;
+    border-radius: 5px;
+}

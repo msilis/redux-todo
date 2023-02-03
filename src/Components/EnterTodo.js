@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import './EnterTodo.css';
-import { completeTodo, editTodo, deleteTodo, addTodo } from '../store/todo';
+import { addTodo } from '../store/todo';
 
 function EnterTodo(){
     //state and dispatch declarations
@@ -9,12 +9,12 @@ function EnterTodo(){
     const dispatch = useDispatch();
 
     //functions to make buttons work
+
+    //Set user input to send to reducer
     function handleInputChange(event){
         setUserInput(event.target.value)   
     }
-
-    console.log(userInput)
-
+    //Send input to store
     function handleAddClick(event){
         event.preventDefault();
         dispatch(addTodo(userInput));
